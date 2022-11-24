@@ -9,3 +9,10 @@ on:
 jobs:
   call-reusable-workflow:
     uses: splitscale/.github/.github/workflows/add-feature-to-feature-project.yml@main
+    with:
+          # You can target a repository in a different organization
+          # to the issue
+          project-url: https://github.com/orgs/splitscale/projects/1
+          github-token: ${{secrets.PROJECTS_PAT}}
+          labeled: feature
+          label-operator: OR
