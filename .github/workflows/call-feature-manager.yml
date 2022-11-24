@@ -1,4 +1,4 @@
-name: trigger workflows
+name: auto add issues to project
 
 on:
   workflow_dispatch:
@@ -7,6 +7,10 @@ on:
       - opened
     
 jobs:
-  call-reusable-workflow:
-    uses: splitscale/.github/.github/workflows/add-feature-to-feature-project.yml@main
+  call-feature-issue-to-project:
+    uses: splitscale/.github/.github/workflows/feature-issue-to-project.yml@main
+    secrets: inherit
+  
+  call-bug-issue-to-project:
+    uses: splitscale/.github/.github/workflows/bug-issue-to-project.yml@main
     secrets: inherit
