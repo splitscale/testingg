@@ -3,7 +3,8 @@ name: auto add issues to project
 on:
   workflow_dispatch:
   issues:
-    types: [opened, edited]
+    types: 
+      - opened
 
 jobs:
   call-feature-issue-to-project:
