@@ -8,9 +8,4 @@ on:
     
 jobs:
   call-reusable-workflow:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v3
-    - name: master issue workflow
-      uses: ./.github/workflows/add-feature-to-feature-project.yml
+    uses: splitscale/.github/.github/workflows/add-feature-to-feature-project.yml@main
