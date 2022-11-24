@@ -1,0 +1,12 @@
+name: trigger workflows
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  call-reusable-workflow:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: master issue workflow
+      uses: ./.github/workflows/reusable-workflow.yml
