@@ -3,4 +3,4 @@
 #   - '(critical|urgent)'
 
 scoped-detail:
-  - '(SD-)'
+  - 'SD-'
