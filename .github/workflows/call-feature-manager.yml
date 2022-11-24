@@ -2,7 +2,10 @@ name: trigger workflows
 
 on:
   workflow_dispatch:
-  
+  issues:
+    types:
+      - opened
+    
 jobs:
   call-reusable-workflow:
     runs-on: ubuntu-latest
