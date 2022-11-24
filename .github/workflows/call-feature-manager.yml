@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: master issue workflow
-      uses: ./.github/workflows/reusable-workflow.yml
+      uses: ./.github/workflows/add-feature-to-feature-project.yml
